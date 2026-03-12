@@ -71,7 +71,8 @@ a {
 .btn {
   position: relative;
   top: 0;
-  border-radius: 0px; }
+  border-radius: 0px;
+ }
   .btn:hover, .btn:active, .btn:focus {
     outline: none;
     -webkit-box-shadow: none !important;
@@ -396,9 +397,9 @@ a {
   transform: translateX(110%);
   -webkit-box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
   box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
-  -webkit-transition: .5s all ease-in-out;
-  -o-transition: .5s all ease-in-out;
-  transition: .5s all ease-in-out; 
+  -webkit-transition: .9s all ease-in-out;
+  -o-transition: .9s all ease-in-out;
+  transition: .9s all ease-in-out; 
 }
   .offcanvas-menu .site-mobile-menu {
     -webkit-transform: translateX(0%);
@@ -1872,14 +1873,13 @@ figure figcaption {
        .btn-custom {
         background-color: #fff;
         color: #000;
-        border: none;
+        border: 2px solid #e3c4a8;
         border-radius: 50px;
-        padding: 1px 20px;
-        font-size: 14px;
-        font-weight: normal !important;
-        letter-spacing: .1em;
+        font-size: 6px;
+        font-weight: 300 !important;
         transition: background-color 0.3s ease;
         display: none;
+        padding: 10px 20px !important;
        }
 
         .btn-custom:hover {
@@ -1888,13 +1888,13 @@ figure figcaption {
         }
 .btn-detail a
 {
-	width: 260px;
+	width: 200px;
 	height: auto;
 	text-decoration: none;
 	display: inline-block;
 	color: #fff;
   background-color: #e3c4a8;
-	padding: 10px 5px;
+	padding: 5px 10px;
 	position: relative;
 	z-index: 1;
 	font-weight: 400;
@@ -2017,12 +2017,7 @@ transform: translateY(-7px);
             .jssora21r:hover { background-position: -183px -33px; }
             .jssora21ldn { background-position: -243px -33px; }
             .jssora21rdn { background-position: -303px -33px; }
-.jssorb21 div, .jssorb21 div:hover, .jssorb21 .av
-            {
-                background: url(../img/b21.png) no-repeat;
-                overflow:hidden;
-                cursor: pointer;
-            }
+
             .jssorb21 div { background-position: -5px -5px; }
             .jssorb21 div:hover, .jssorb21 .av:hover { background-position: -35px -5px; }
             .jssorb21 .av { background-position: -65px -5px; }
@@ -2097,7 +2092,7 @@ opacity: 1;
             }
 
             .btn-detail a{
-              width: 120px;
+              width: 200px;
               font-size: 10px;
               border: 1px solid #000;
               border-radius: 5px;
@@ -2116,4 +2111,22 @@ opacity: 1;
             overflow: hidden !important;
             }
 
+          }
+          /*****iphone 12pro******/
+          @media (max-width: 400px) {
+            .btn-detail a{
+              width: 140px;
+              font-size: 10px;
+              border: 1px solid #000;
+              border-radius: 5px;
+            }
+          }
+          /*******small devices*******/
+          @media (max-width: 320px) {
+            .btn-detail a{
+              width: 100px;
+              font-size: 10px;
+              border: 1px solid #000;
+              border-radius: 5px;
+            }
           }
