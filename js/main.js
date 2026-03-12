@@ -284,3 +284,29 @@ jQuery(document).ready(function($) {
 	window.addEventListener('resize', toggle);
 })();
 
+(function() {
+	var menuToggles = document.querySelectorAll('.js-menu-toggle');
+
+	menuToggles.forEach(function(toggle) {
+		toggle.addEventListener('click', function(e) {
+			e.preventDefault();
+			
+			var body = document.querySelector('body');
+
+			var menu = document.querySelector('.site-mobile-menu');
+
+			if (body.classList.contains('overflow-hidden')) {
+				body.classList.remove('overflow-hidden');
+			} else {
+				body.classList.add('overflow-hidden');
+			}
+
+			if(menu.classList.contains('active')) {
+				menu.classList.remove('active');
+			} else {
+				menu.classList.add('active');
+			}
+		});
+	});
+
+})();
