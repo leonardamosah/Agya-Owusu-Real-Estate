@@ -65,7 +65,10 @@
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
+
+  
+  <main class="flex-grow-1">
   <a name="up"></a>
   <div class="site-wrap">
 
@@ -379,7 +382,7 @@
       </div>
     </div>
 
-    <footer class="site-footer">
+   <footer class="site-footer" >
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
@@ -410,8 +413,8 @@
               <h3 class="footer-heading mb-4">Subscribe</h3>
               <form action="#" method="post" class="site-block-subscribe">
                 <div class="input-group mb-3">
-                  <input type="text" class="form-control border-secondary bg-transparent" placeholder="Enter your email"
-                    aria-label="Enter Email" aria-describedby="button-addon2" id="emailInput">
+                  <input type="email" class="form-control border-secondary bg-transparent" placeholder="Enter your email"
+                    aria-label="Enter Email" aria-describedby="button-addon2" id="emailInput" required>
                   <div class="input-group-append">
                     <button class="btn btn-primary rounded-top-right-0" type="submit" id="subscribeBtn">Subscribe</button>
                   </div>
@@ -477,14 +480,14 @@
           </div>
           
         </div>
-        <div class="row pt-5 mt-5 text-center" >
-          <div class="col-md-12">
-            <p class="myfooter">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;2026 | All rights reserved | Agya Owusu Real Estate | Designed & developed by Amosah Web Technologies(+233 503 370 733).  <!--<a href="https://amosah.com" target="_blank" >amosah.com</a>-->
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        <div class="mt-auto mb-0 py-3 text-center bg-light" >
+          <hr class="mt-0 mb-3 text-secondary opacity-25">
+            <p class="mb-0 small text-muted">
+            <!-- Link back to AWT can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;2026 | All rights reserved | Agya Owusu Real Estate | Designed & developed by Amosah Web Technologies(+233 503 370 733). <!--<a href="https://amosah.com" target="_blank" >amosah.com</a>-->
+            <!-- Link back to AWT can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
-          </div>
+          
           
         </div>
       </div>
@@ -493,7 +496,7 @@
       </div>
 
       <div>
-        <a href="#up" id="scrollUpBtn"> <img class="scrollUpBtn" src="img/upp.png"  alt="Scroll to Top"></a>
+        <a href="#up" id="scrollUpBtn"> <img class="scrollUpBtn" src="img/upp.png"  alt="Scroll to Top" loading="lazy"></a>
       </div>
     </footer>
 
@@ -513,7 +516,6 @@
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
-
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -527,6 +529,9 @@
       "logo": "https://agyaowusu.com/img/newlogo.png",
     }
   </script>
-    
+
+
+
+  </main>
   </body>
 </html>
