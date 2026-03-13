@@ -310,3 +310,18 @@ jQuery(document).ready(function($) {
 	});
 
 })();
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+	const observer = new MutationObserver(() => {
+		document.querySelectorAll('a.lb-close').forEach(a => {
+			if (!a.hasAttribute('href') || a.getAttribute('href') === '') {
+				a.setAttribute('href', '#');
+				a.setAttribute('aria-label', 'Close');
+			}
+		});
+	});
+	observer.observe(document.body, { childList: true, subtree: true });
+
+});
