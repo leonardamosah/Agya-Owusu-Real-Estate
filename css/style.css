@@ -380,7 +380,7 @@ a {
           opacity: 1; }
 
 .site-mobile-menu {
-  width: 100%;
+  width: 70%;
   height: 100dvh;
   margin: 0;
   position: fixed;
@@ -397,9 +397,9 @@ a {
   transform: translateX(110%);
   -webkit-box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
   box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
-  -webkit-transition: .9s all ease-in-out;
-  -o-transition: .9s all ease-in-out;
-  transition: .9s all ease-in-out; 
+  -webkit-transition: .5s all ease-in-out;
+  -o-transition: .5s all ease-in-out;
+  transition: .5s all ease-in-out; 
 }
   .offcanvas-menu .site-mobile-menu {
     -webkit-transform: translateX(0%);
